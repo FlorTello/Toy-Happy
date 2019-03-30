@@ -32,9 +32,15 @@ import {
   MatDialogModule,
   MAT_RIPPLE_GLOBAL_OPTIONS,
 } from '@angular/material';
+import { LoginComponent } from './views/login/login.component';
+import { RegisterComponent } from './views/register/register.component';
+import { HomeComponent } from './views/home/home.component';
+import { DashboardComponent } from './views/dashboard/dashboard.component';
+import { AppRoutingModule } from './app.routing';
 
 @NgModule({
   imports: [
+    AppRoutingModule,
     BrowserModule,
     BrowserAnimationsModule,
     FormsModule,
@@ -94,7 +100,7 @@ import {
     MatListModule,
     MatDialogModule,
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent, LoginComponent, RegisterComponent, HomeComponent, DashboardComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
